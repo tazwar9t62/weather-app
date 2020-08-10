@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 15px 15px;
+}
+
+header input {
+    height: 100%;
+    max-width: 280px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px 0 15px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid goldenrod;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+}
