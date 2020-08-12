@@ -30,6 +30,8 @@ function displayResults(weather) {
     weatherOfTheCity.innerText = `${weather.weather[0].main}`;
     let hilow = document.querySelector(".current .hi-low");
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    searchBox.value = " ";
+
 }
 
 function dateBuilder(d) {
