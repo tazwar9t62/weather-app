@@ -19,6 +19,7 @@ function getResults(query) {
 }
 
 function displayResults(weather) {
+
     let city = document.querySelector(".location .city");
     city.innerText = `${weather.name}, ${weather.sys.country}`;
     let now = new Date();
@@ -30,7 +31,9 @@ function displayResults(weather) {
     weatherOfTheCity.innerText = `${weather.weather[0].main}`;
     let hilow = document.querySelector(".current .hi-low");
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
-    searchBox.value = " ";
+    let feelsLike = document.querySelector(".feels-like");
+    feelsLike.innerHTML = `<span>Feels like </span> ${Math.round(weather.main.feels_like)}<span>°c</span> `;
+
 
 }
 

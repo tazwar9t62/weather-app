@@ -6,7 +6,7 @@
 
 body {
     font-family: 'montserrat', sans-serif;
-    background-image: url('background.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: top center;
 }
@@ -37,7 +37,7 @@ header input {
     font-size: 20px;
     font-weight: 300;
     background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 3px solid goldenrod;
+    border-bottom: 3px solid #daa520;
     transition: 0.3s ease-in-out;
     text-align: center;
 }
@@ -86,6 +86,10 @@ main {
 
 .current .hi-low {
     font-size: 20px;
+}
+
+.current .feels-like {
+    margin-top: 7px;
 }
 
 #footer {
